@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hercules’ Labours — Adventure Story (Text Forms & Genre Y4–Y8)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root{
+      --bg:#2d1b1b;          /* adventure palette (matches Robin Hood / Trojan Horse) */
+      --card:#4a2c2ccc;
+      --ink:#fdf2f8;
+      --muted:#fbcfe8;
+      --accent:#e11d48;      /* red */
+      --accent-2:#f59e0b;    /* amber */
+    }
+    body{margin:0;color:var(--ink);font-family:Inter,system-ui;background:linear-gradient(135deg,#2d1b1b,#1c1917);} 
+    .banner{padding:3rem 1rem 2rem;text-align:center;background:linear-gradient(135deg,#7f1d1d,#2d1b1b);} 
+    .title{font-family:Cinzel,serif;font-weight:800;font-size:clamp(2rem,5vw,3.4rem);margin:0;} 
+    .subtitle{color:var(--muted);margin:.5rem 0 0} 
+    .container{max-width:1100px;margin:-2.5rem auto 3rem;padding:0 1rem} 
+    .card{background:var(--card);border-radius:20px;border:1px solid #7f1d1d;box-shadow:0 20px 60px #00000055;margin-bottom:1rem;} 
+    .controls{display:flex;justify-content:center;gap:.8rem;padding:1rem;background:#2d1b1b;border-bottom:1px solid #7f1d1d;} 
+    .btn{background:#2d1b1b;border:1px solid #7f1d1d;border-radius:12px;padding:.6rem 1rem;color:var(--ink);font-weight:600;cursor:pointer;} 
+    .btn:hover{border-color:var(--accent-2);} 
+    details{margin:1rem 0;border:1px solid #7f1d1d;border-radius:16px;overflow:hidden;background:#4a2c2ccc;} 
+    summary{cursor:pointer;padding:1rem;font-family:Cinzel,serif;font-weight:700;display:flex;justify-content:space-between;align-items:center;background:linear-gradient(90deg,#4a2c2c,#2d1b1b);} 
+    .content{padding:1rem 1.25rem;line-height:1.75} 
+    .story p{margin:.7rem 0} 
+    .tag{display:inline-block;border:1px solid #7f1d1d;border-radius:999px;padding:.15rem .6rem;font-size:.8rem;color:#fde68a;background:#7f1d1d66;margin-right:.4rem} 
+    .stop{border-left:3px solid var(--accent-2);background:#7f1d1d99;padding:.6rem .8rem;border-radius:8px;margin-top:.8rem;margin-bottom:.5rem} 
+    .q-list{counter-reset:q} 
+    .q-list li{list-style:none;margin:.6rem 0;padding:.6rem .75rem;border:1px dashed #7f1d1d;border-radius:12px;background:#2d1b1b;} 
+    .q-list li::before{counter-increment:q;content:counter(q)".";margin-right:.5rem;color:var(--accent-2);font-weight:800;} 
+    .frame{border:1px solid #7f1d1d;border-radius:16px;background:#2d1b1b;padding:1rem} 
+    .frame textarea{width:100%;background:#4a2c2c;color:var(--ink);border:1px solid #7f1d1d;border-radius:10px;padding:.6rem;margin:.3rem 0} 
+    .preview{border:1px dashed #7f1d1d;border-radius:12px;padding:1rem;margin-top:1rem;min-height:3rem} 
+    .truefalse-list{list-style:none;padding-left:0} 
+    .truefalse-list li{margin:.5rem 0;padding:.5rem;border:1px solid #7f1d1d;border-radius:10px;background:#2d1b1b;} 
+    .footer-note{color:#fbcfe8;font-size:.9rem;text-align:center;padding:1rem 0 2rem} 
+    @media print{
+      @page{size:A4;margin:14mm}
+      .banner{padding:1.2rem 0 .8rem}
+      .controls{display:none}
+      details{border-color:#7f1d1d}
+    }
+  </style>
+</head>
+<body>
+  <header class="banner card">
+    <h1 class="title">Hercules’ Labours — Endurance Against Impossible Odds</h1>
+    <p class="subtitle">Focus: <strong>Text Forms & Genre (Years 4–8)</strong> • Adventure genre with emphasis on resilience & cunning</p>
+    <div class="controls">
+      <button class="btn" id="openAll">Open all</button>
+      <button class="btn" id="closeAll">Close all</button>
+      <button class="btn" onclick="window.print()">Print / Save as PDF</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card" style="padding:1rem 1rem 0">
+      <div style="padding:0 1rem 1rem;color:#fde68a">
+        <span class="tag">Genre: Adventure</span>
+        <span class="tag">Theme: Endurance & ingenuity</span>
+        <span class="tag">Purpose: Entertain; prompt critical comparison</span>
+      </div>
+
+      <details open>
+        <summary>Part 1 — Introduction: Burden from Above</summary>
+        <div class="content story">
+          <p>In ancient Greece, Hercules was famed for his might, but pride and anger had brought him into conflict with the gods. They decreed a punishment: twelve labours set by King Eurystheus, tasks chosen not to test him fairly but to grind him down. Each challenge came from powers beyond his control, designed to remind him that no matter his strength, he would always be under authority greater than himself.</p>
+          <p>These labours were not simple contests. They were trials meant to exhaust him, humiliate him, and prove that resistance against such forces was hopeless. But Hercules accepted the burden, not with joy, but with a grim determination that he would endure what was set before him.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Part 2 — Rising Action: Strength Alone is Not Enough</summary>
+        <div class="content story">
+          <p>The early labours showed Hercules’ resilience more than his raw power. When he faced the Nemean Lion, whose hide no weapon could pierce, Hercules fought not with sword or spear but with patience and courage, trapping the beast in its cave and wrestling it into submission.</p>
+          <p>The Hydra, with its endless heads, was another trial meant to mock the idea of victory. For each head he struck down, two more grew. Only when he called upon his nephew Iolaus to help — burning the stumps with fire — did Hercules prevail. These tasks taught him that strength alone could not meet the challenges before him. He would need cunning, resourcefulness, and allies willing to resist alongside him.</p>
+          <p>Even the so-called “lesser” labours pressed him to think differently. When told to clean the Augean stables in a single day, Hercules could have wasted his strength in futility. Instead, he diverted rivers to do the work in hours, outwitting the king who had set the task to break him.</p>
+          <div class="stop"><strong>Stop point (Y4–Y5):</strong> Y4 — identify audience & purpose (to entertain) · Y5 — describe adventure features (hero, trials, danger, clever solution)</div>
+        </div>
+      </details>
+
+      <details>
+        <summary>Part 3 — Climax: The Endless Trials</summary>
+        <div class="content story">
+          <p>As the labours continued, the tasks grew stranger, each one stretched further to test the limits of Hercules’ will. He was sent to chase the golden-horned Hind, a creature so swift it took him a year of pursuit before he captured it. He captured the Cretan Bull, a beast that raged like fire, threatening to trample fields and villages.</p>
+          <p>At last he descended into the underworld itself, ordered to drag Cerberus, the three-headed guardian of Hades, back into the world of the living. This was no test of strength alone. It was a trial of spirit — to walk among the dead and not falter.</p>
+          <p>Each labour reminded him that the gods did not seek fairness. They sought to wear him down. Yet still he endured, adapting, resisting, surviving each new burden no matter how impossible it seemed.</p>
+          <div class="stop"><strong>Stop point (Y6–Y7):</strong> Y6 — analyse how pacing, repetition of trials, and symbolism build the idea of endurance · Y7 — explain author choices (emphasising ingenuity over brute force) for audience impact</div>
+        </div>
+      </details>
+
+      <details>
+        <summary>Part 4 — Resolution: Endurance Without Surrender</summary>
+        <div class="content story">
+          <p>When at last the twelve labours were complete, Hercules had not defeated the gods. Their power remained, distant and absolute, untouched by his efforts. Yet their punishments had failed in another way. Though scarred, weary, and tested beyond all measure, Hercules had not broken.</p>
+          <p>He endured every trial, bent but never shattered. By wit and resilience, he survived the weight of impossible demands. In this, he achieved something greater than simple victory: he proved that endurance itself can outlast oppression.</p>
+          <p>To the storytellers of Greece, Hercules became more than a figure of strength. He stood as a reminder that even when authority cannot be overthrown, survival with dignity and determination can itself be a triumph — leaving a legacy that no punishment can erase.</p>
+          <div class="stop"><strong>Stop point (Y8):</strong> Y8 — evaluate how the text conveys ideas about power, punishment, and endurance across contexts; consider audiences who value “resilience over conquest.”</div>
+        </div>
+      </details>
+
+      <details>
+        <summary>Comprehension & Analysis</summary>
+        <div class="content">
+          <ol class="q-list">
+            <li>Why were the Twelve Labours given to Hercules?</li>
+            <li>Map the main events within the structure: introduction → rising action → climax → resolution.</li>
+            <li>What lesson does Hercules learn from the Hydra about strength and cunning?</li>
+            <li>How does the Augean stables labour show clever thinking rather than brute force?</li>
+            <li>What makes the underworld labour (Cerberus) different from the others?</li>
+            <li>What message does the Resolution give about endurance vs. defeating authority?</li>
+            <li>How might the labours be seen as more than just physical challenges?</li>
+          </ol>
+        </div>
+      </details>
+
+      <details>
+        <summary>True or False — Features of the Adventure Story</summary>
+        <div class="content">
+          <p>Decide if each statement is <strong>True</strong> or <strong>False</strong> based on the Hercules text.</p>
+          <ul class="truefalse-list">
+            <li>1. The story uses a clear 4-part structure.</li>
+            <li>2. Hercules relies only on physical strength to succeed.</li>
+            <li>3. The Hydra’s heads grew back whenever Hercules cut them off.</li>
+            <li>4. Hercules used rivers to help clean the Augean stables.</li>
+            <li>5. The climax includes a descent into the underworld.</li>
+            <li>6. The story shows gods setting unfair or impossible tasks.</li>
+            <li>7. The resolution shows Hercules overthrowing the gods.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details open>
+        <summary>Self/Peer Paragraph Builder</summary>
+        <div class="content frame">
+          <label>Step 1: Paste your quote</label>
+          <textarea id="quote" rows="2" placeholder="e.g. 'Instead, he diverted rivers to do the work in hours.'"></textarea>
+
+          <label>Step 2: Write your explanation</label>
+          <textarea id="explanation" rows="2" placeholder="e.g. This shows Hercules using wit and strategy, not just strength."></textarea>
+
+          <button class="btn" onclick="buildParagraph()">Build My Paragraph</button>
+
+          <div id="output" class="preview" style="display:none;"></div>
+          <p id="copyPrompt" style="display:none;color:#fbbf24;margin-top:.5rem;">✅ Copy this paragraph into your book.</p>
+        </div>
+      </details>
+
+    </section>
+  </main>
+
+  <footer class="footer-note">
+    Hercules’ Labours Adventure Story • Text Forms & Genre Y4–Y8 • Single-genre design (Adventure)<br />
+    © Manurewa Intermediate – Literacy | Built for multi‑level teaching (Y4–8) with progressive complexity.
+  </footer>
+
+  <script>
+    document.getElementById('openAll').addEventListener('click',()=>{
+      document.querySelectorAll('details').forEach(d=>d.open=true)
+    });
+    document.getElementById('closeAll').addEventListener('click',()=>{
+      document.querySelectorAll('details').forEach(d=>d.open=false)
+    });
+
+    function buildParagraph(){
+      const quote=document.getElementById('quote').value.trim();
+      const explanation=document.getElementById('explanation').value.trim();
+      const output=document.getElementById('output');
+      const prompt=document.getElementById('copyPrompt');
+
+      if(quote && explanation){
+        output.innerHTML = `In the story, the author writes, <em>“${quote}”</em> ${explanation}`;
+        output.style.display="block";
+        prompt.style.display="block";
+      } else {
+        output.style.display="none";
+        prompt.style.display="none";
+        alert("Please add both a quote and an explanation before building your paragraph.");
+      }
+    }
+  </script>
+</body>
+</html>
